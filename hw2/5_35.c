@@ -42,11 +42,11 @@ int main(void)
         scanf("%lf", &y[i]);
     }
     G(x, n_x, &min_x, &max_x);
-    printf("x\n");
+    printf("For x:\n");
     printf("min: %lf\n", min_x);
     printf("max: %lf\n", max_x);
     G(y, n_y, &min_y, &max_y);
-    printf("Для массива y:\n");
+    printf("For y:\n");
     printf("min: %lf\n", min_y);
     printf("max: %lf\n", max_y);
     return 0;
