@@ -33,10 +33,10 @@ list XOR_L1_L2(list L1, list L2)
         }
         if (!flag)
         {
-            node *new_node = (node *)malloc(sizeof(node));
-            new_node->data = strdup(tmp1->data);
-            new_node->next = L3;
-            L3 = new_node;
+            node *buf = (node *)malloc(sizeof(node));
+            buf->data = strdup(tmp1->data);
+            buf->next = L3;
+            L3 = buf;
         }
     }
     for (list tmp2 = L2; tmp2 != NULL; tmp2 = tmp2->next)
