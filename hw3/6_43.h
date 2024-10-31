@@ -18,7 +18,7 @@ typedef struct node
 
 typedef node *stack;
 
-void push_s(stack *s, void *data);
+void push_s(stack *s, void *val);
 
 void *pop_s(stack *s);
 
