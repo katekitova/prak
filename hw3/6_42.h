@@ -18,7 +18,7 @@ typedef struct node
 
 typedef node *queue;
 
-void put_q(queue *q, void *data);
+void put_q(queue *q, void *val);
 
 void *get_q(queue *q);
 
