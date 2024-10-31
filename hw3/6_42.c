@@ -9,10 +9,10 @@
 #include <stdio.h>
 #include "n6_42.h"
 
-void put_q(queue *q, void *value)
+void put_q(queue *q, void *val)
 {
     queue new = (queue)malloc(sizeof(node));
-    new -> data = value;
+    new -> data = val;
     new -> next = NULL;
     if (*q == NULL)
     {
@@ -26,17 +26,17 @@ void put_q(queue *q, void *value)
 void *get_q(queue *q)
 {
     if (*q == NULL) return NULL;
-    queue fo = *q;
-    void *value = fo -> data;
+    queue f = *q;
+    void *val = f-> data;
     *q = (*q) -> next;
-    free(fo);
-    return value;
+    free(f);
+    return val;
 }
 
 int size_q(queue q)
 {
     int n = 0;
-    for(; q != NULL; q = q -> next) ++n;
+    for(; q != NULL; q = q -> next) n++;
     return n;
 }
 
