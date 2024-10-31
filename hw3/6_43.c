@@ -10,10 +10,10 @@
 #include <stdlib.h>
 #include "n6_43.h"
 
-void push_s(stack *s, void *value)
+void push_s(stack *s, void *val)
 {
     stack new = (stack)malloc(sizeof(node));
-    new -> data = value;
+    new -> data = val;
     new -> next = *s;
     *s = new;
 }
@@ -31,7 +31,7 @@ void *pop_s(stack *s)
 int size_s(stack s)
 {
     int n = 0;
-    for(; s != NULL; s = s -> next) ++n;
+    for(; s != NULL; s = s -> next) n++;
     return n;
 }
 
