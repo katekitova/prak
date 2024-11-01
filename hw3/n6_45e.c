@@ -82,11 +82,7 @@ void print_t(tree t)
                 put_q(&q, buf -> right);
             }
         }
-        if (next == 0)
-        {
-            printf("%d ",buf -> data);
-            break;
-        }
+        if (next == 0) break;
         printf("\n");
         last = next;
         next = 0;
