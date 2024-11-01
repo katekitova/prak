@@ -48,6 +48,7 @@ void print_s(stack s)
 
 void del_s(stack *s)
 {
+    if (s == NULL) return;
     stack buf = *s;
     *s = (*s) -> next;
     for (; *s != NULL; *s = (*s) -> next)
