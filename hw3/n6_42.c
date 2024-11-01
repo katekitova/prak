@@ -53,6 +53,7 @@ void print_q(queue q)
 
 void del_q(queue *q)
 {
+    if (q == NULL) return;
     queue del;
     for(del = *q; del != NULL; del = *q)
     {
